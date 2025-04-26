@@ -53,7 +53,7 @@ const Home = () => {
   <div className="welcome-content">
     <h1 className="welcome-text">
       <span className="welcome-highlight">Welcome to</span>
-      <span className="brand-name">Aitebaar</span>
+      <span className="brand-name">Checking CICD Aitebaar</span>
     </h1>
     <p className="tagline">Your trusted financial literacy platform!</p>
     <p className="welcome-description">
