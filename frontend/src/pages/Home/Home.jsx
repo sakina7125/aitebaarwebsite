@@ -33,7 +33,7 @@ const Home = () => {
             </ul>
           </nav>
           <div className="logo-center">
-            <img src="AitebaarLogo.png" alt="Aitebaar Logo" className="logo" />
+            <img src="/AitebaarLogo.png" alt="Aitebaar Logo" className="logo" />
           </div>
           <div className="header-right">
             {user ? (
@@ -53,7 +53,7 @@ const Home = () => {
   <div className="welcome-content">
     <h1 className="welcome-text">
       <span className="welcome-highlight">Welcome to</span>
-      <span className="brand-name">Checking CICD Aitebaar</span>
+      <span className="brand-name">Aitebaar</span>
     </h1>
     <p className="tagline">Your trusted financial literacy platform!</p>
     <p className="welcome-description">

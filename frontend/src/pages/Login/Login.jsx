@@ -19,13 +19,12 @@ const Login = () => {
       if (isLogin) {
         // Handle login
         localStorage.setItem('user', JSON.stringify({ name: formData.email.split('@')[0] }));
-        window.location.href = '/'; // Change from navigate to window.location
+      } else {
+        // Handle registration
         localStorage.setItem('user', JSON.stringify({ name: formData.name }));
-    window.location.href = '/'; // Change from navigate to window.location
-  
-};
-        navigate('/'); // Redirect to home page
-      };
+      }
+      window.location.href = '/';
+    };
   
     const handleChange = (e) => {
       setFormData({
@@ -37,7 +36,7 @@ const Login = () => {
     return (
       <div className="auth-container">
         <div className="auth-box">
-          <div className="auth-header">
+        <div className="auth-header">
             <img 
               src="/AitebaarLogo.png" 
               alt="Aitebaar Logo" 
@@ -146,5 +145,7 @@ const Login = () => {
     </div>
   );
 };
+
+
 
 export default Login;
