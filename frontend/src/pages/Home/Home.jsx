@@ -29,7 +29,7 @@ const Home = () => {
               <li><a href="#">Education</a></li>
               <li><a href="#">Loans</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">About Us</a></li>
+              <li onClick={() => navigate('/about')}><a href="#">About Us</a></li>
             </ul>
           </nav>
           <div className="logo-center">
@@ -60,7 +60,7 @@ const Home = () => {
       Empowering Pakistanis with financial knowledge, smart credit solutions, and innovative investment opportunities.
     </p>
     <div className="cta-buttons">
-      <button className="primary-cta">Get Started</button>
+      <button className="primary-cta"onClick={() => navigate('/login')}>Get Started</button>
       <button className="secondary-cta">Learn More</button>
     </div>
   </div>
