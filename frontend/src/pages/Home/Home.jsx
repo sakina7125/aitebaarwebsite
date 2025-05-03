@@ -26,10 +26,11 @@ const Home = () => {
           <nav className="navbar">
             <ul className="nav-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Loans</a></li>
-              <li><a href="#">Contact</a></li>
+              <li onClick={() => navigate('/education')}><a style={{cursor: 'pointer'}}>Education</a></li>
+              
+              <li onClick={() => navigate('/contact')}><a style={{cursor: 'pointer'}}>Contact</a></li>
               <li onClick={() => navigate('/about')}><a href="#">About Us</a></li>
+              <li onClick={() => navigate('/wallet')}><a style={{cursor: 'pointer'}}>My Wallet</a></li>
             </ul>
           </nav>
           <div className="logo-center">
@@ -60,8 +61,14 @@ const Home = () => {
       Empowering Pakistanis with financial knowledge, smart credit solutions, and innovative investment opportunities.
     </p>
     <div className="cta-buttons">
-      <button className="primary-cta"onClick={() => navigate('/login')}>Get Started</button>
+    {user ? (
+    <button className="primary-cta" onClick={() => navigate('/wallet')}>My Wallet</button>
+  ) : (
+    <>
+      <button className="primary-cta" onClick={() => navigate('/login')}>Get Started</button>
       <button className="secondary-cta">Learn More</button>
+    </>
+  )}
     </div>
   </div>
   <div className="welcome-image">
@@ -96,7 +103,6 @@ const Home = () => {
               <h3>Credit Scoring</h3>
               <p>State of the Art AI Credit scoring system for the unbanked individuals</p>
             </div>
-
           </div>
         </section>
         {/* Add this after your services-section */}
