@@ -291,8 +291,9 @@ const Home = () => {
   <div className="footer-bottom">
     <p>&copy; 2025 Aitebaar. All rights reserved.</p>
     <div className="legal-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+    <a onClick={() => navigate('/privacy-policy')} style={{cursor: 'pointer'}}>Privacy Policy</a>
+    <a onClick={() => navigate('/terms-of-service')} style={{cursor: 'pointer'}}>Terms of Service</a>
+     
     </div>
   </div>
 </footer>
