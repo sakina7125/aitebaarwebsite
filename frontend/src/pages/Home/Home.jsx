@@ -66,7 +66,7 @@ const Home = () => {
   ) : (
     <>
       <button className="primary-cta" onClick={() => navigate('/login')}>Get Started</button>
-      <button className="secondary-cta">Learn More</button>
+      <button className="secondary-cta" onClick={() => navigate('/about')}>Learn More</button>
     </>
   )}
     </div>
