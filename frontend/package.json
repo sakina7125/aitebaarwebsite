@@ -16,7 +16,7 @@
   "dev": "vite",
   
     
-  "lint": "npm run lint",
+ 
   
     
   "build": "vite build",
@@ -44,7 +44,7 @@
   "react-router-dom": "^7.5.2",
   
     
-  "recharts": "^2.15.3"
+  "recharts": "^2.12.0"
   
   },
   
