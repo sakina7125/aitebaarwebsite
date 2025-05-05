@@ -233,7 +233,22 @@ background: rgba(10, 46, 56, 0.85);
       padding: 25px;
     }
     
-
+    .approach-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .approach-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+    .approach-left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
           }.approach-stack {
             display: flex;
             flex-direction: column;
@@ -242,11 +257,23 @@ background: rgba(10, 46, 56, 0.85);
   margin: 0 auto;
   padding: 0 20px;
           }
+          .approach-stack h2 {
+            color: rgb(245, 234, 214);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+          }
           
          .top-boxes {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
+            width: 95%;
+            margin-left: 40px;
+          }
+          .bottom-box {
+            width: 50%;
+            margin: 0 auto;
           }
           .approach-box {
             background: rgba(10, 46, 56, 0.85);
@@ -278,6 +305,9 @@ background: rgba(10, 46, 56, 0.85);
             }
             
             .middle-box {
+              width: 100%;
+            }
+            .bottom-box {
               width: 100%;
             }
           }

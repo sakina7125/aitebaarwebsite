@@ -45,25 +45,28 @@ const About = () => {
         </div>
       </section>
 
-      <section className="services-overview">
+      <section className="approach-stack">
   <h2>Our Approach</h2>
-  <div className="approach-stack">
-    <div className="top-boxes">
-      <div className="service-item">
-        <h3>Technology-Driven Solutions</h3>
-        <p>We leverage cutting-edge technology including AI and machine learning to provide innovative financial solutions.</p>
-      </div>
-      <div className="service-item">
-        <h3>Education First</h3>
-        <p>Our platform prioritizes financial education, ensuring users understand the fundamentals before making financial decisions.</p>
-      </div>
+  
+  <div className="top-boxes">
+    <div className="approach-box">
+      <h3>Technology-Driven Solutions</h3>
+      <p>We leverage cutting-edge technology including AI and machine learning to provide innovative financial solutions.</p>
     </div>
-    <div className="service-item middle-box">
-      <h3>Inclusive Finance</h3>
-      <p>We're breaking down traditional barriers to financial services, making them accessible to all Pakistanis.</p>
+    
+    <div className="approach-box">
+      <h3>Education First</h3>
+      <p>Our platform prioritizes financial education, ensuring users understand the fundamentals before making financial decisions.</p>
     </div>
   </div>
+  
+  <div className="approach-box bottom-box">
+    <h3>Inclusive Finance</h3>
+    <p>We're breaking down traditional barriers to financial services, making them accessible to all Pakistanis.</p>
+  </div>
 </section>
+  
+ 
 
 <section className="team-section">
   <h2>Our Team</h2>
