@@ -1,20 +1,14 @@
-html, body, #root {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
-  position: relative;
+  /*height: 100%;
+  position: relative;*/
+  overflow-x: hidden;
 }
 .home-container {
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    /*background:   linear-gradient(135deg, #0a2e38, #1a5a6c) fixed;*/
-    /*color: white;*/
-    position: absolute; /* Needed for absolute logo positioning */
-    left: 0;
-    right: 0;
+    
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -25,7 +19,7 @@ html, body, #root {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 ;
 }
   
   /* Logo positioning - higher up */
@@ -193,27 +187,7 @@ html, body, #root {
     100% { transform: translateY(0px); }
   }
   
-  @media (max-width: 1024px) {
-    .welcome-container {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 20px;
-    }
   
-    .welcome-content {
-      padding-right: 0;
-      margin-bottom: 40px;
-    }
-  
-    .cta-buttons {
-      justify-content: center;
-    }
-  
-    .welcome-image {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
   
   @media (max-width: 768px) {
     .brand-name {
@@ -294,21 +268,15 @@ html, body, #root {
 /* Add these styles after your existing CSS */
 
 .services-section {
-    min-height: 100vh;
+  padding: 60px 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 60px 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    
+    
 }
 
 .services-header {
@@ -322,10 +290,12 @@ html, body, #root {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr) !important;
-  margin-left: 30px;
-  margin-right: 20px;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    width: 100%;
+ 
 }
 
 .services-title {
@@ -364,13 +334,13 @@ html, body, #root {
 
 
 .service-card {
-  flex: 0 0 calc(33.333% - 20px);  /* Fixed width for each card */
-  min-width: 300px;  /* Minimum width to prevent squishing */
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  padding: 40px 30px;
   border-radius: 15px;
   backdrop-filter: blur(5px);
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
 }
 
 
@@ -386,13 +356,8 @@ html, body, #root {
 }
 
 .mission-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
   padding: 80px 20px;
   background: rgb(245, 234, 214);
   color: #333;
@@ -448,27 +413,11 @@ html, body, #root {
   object-position: center 30%; /* Centers the image content */ /* Adjusted to show more of the top portion */
 }
 
-@media (max-width: 768px) {
-  .mission-content {
-      flex-direction: column;
-  }
-  
-  .mission-title {
-      font-size: 2rem;
-  }
-  
-  .mission-column h2 {
-      font-size: 1.5rem;
-  }
-}
+
 .features-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+ 
   padding: 80px 20px;
   background: rgba(23, 23, 23, 0.5);
   backdrop-filter: blur(10px);
@@ -555,13 +504,9 @@ html, body, #root {
   }
 }
 .credit-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+ 
   padding: 80px 20px;
   background: rgba(23, 23, 23, 0.9);
   color: white;
@@ -653,13 +598,9 @@ html, body, #root {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .trading-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+ 
   padding: 80px 20px;
   background: #1a1a1a;
   color: white;
@@ -747,13 +688,10 @@ html, body, #root {
   object-fit: cover;
 }
 .feedback-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+ 
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+ 
+  
   padding: 80px 20px;
   background: rgb(245, 234, 214);
   color: #333;
@@ -871,13 +809,9 @@ html, body, #root {
   background: linear-gradient(135deg, #96C93D, #7EAB2E);
 }
 .footer {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+ 
   position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+ 
   background: #0a2e38;
   color: white;
   padding: 60px 20px 20px;
@@ -1044,5 +978,91 @@ html, body, #root {
   box-shadow: 0 5px 15px rgba(245, 234, 214, 0.2);
   background: white;
 }
-  
+.services-section,
+.mission-section,
+.features-section,
+.credit-section,
+.trading-section,
+.feedback-section,
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Content width control */
+.services-grid,
+.mission-content,
+.features-container,
+.feedback-container,
+.footer-content {
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+  /* Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  .welcome-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+  }
+
+  .welcome-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .brand-name {
+    font-size: 3rem;
+  }
+
+  .welcome-highlight {
+    font-size: 1.8rem;
+  }
+
+  .welcome-description {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .services-section {
+    padding: 60px 15px;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+  }
+}
   
